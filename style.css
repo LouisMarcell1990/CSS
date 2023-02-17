@@ -18,10 +18,10 @@ main {
     border-radius: 15px;
     -webkit-box-shadow: 8px 1px 15px 12px rgba(0,0,0,0.39); 
     box-shadow: 8px 1px 15px 12px rgba(0,0,0,0.39);
-    position: relative;
     margin: 20px;
     padding: 20px;
     background-color: rgb(199, 226, 100);
+    width: 100%;
 }
 
 h2 {
