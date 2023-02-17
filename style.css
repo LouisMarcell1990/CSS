@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(134, 134, 134);
+    
+}
+
+h2 {
+    color: bisque;
+    background-color: rgb(78, 78, 78);
+    padding: 10px;   
+}
+
+a {
+    color: rgb(59, 77, 52);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(71, 247, 2);
+}
+
+
+h2,
+div,
+ul,
+li {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.disable {
+    pointer-events: none;
+    cursor: default;
+}
+
+input button {
+    position: fixed;
+    left: 100%;
+
+}
+
+input,
+.searchbtn {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+/*Non riesco a spostare input text e bottone search totalmente a destra*/
+
+.searchbtn:hover {
+    background-color: rgb(37, 92, 11);
+    color: white;
+}
+
+.dropbutton {
+    background-color: inherit;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .list {
+    display: block;
+    position: relative;
+  }
+
+  ul,
+  li,
+  .dropdown-content {
+    margin-left: 2em;
+  }
+
+@media screen and (max-width:768px) {
+    main {
+        background-color: rgb(134, 134, 134);
+    }
+
+    ul,
+    input,
+    .searchbtn {
+        display: none;
+    }
+    
+    .hamburger div.ham {
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .hamburger {
+        position: relative;
+        margin-right: 1%;
+    }
+
+}
