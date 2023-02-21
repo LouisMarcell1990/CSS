@@ -45,6 +45,7 @@ a:hover {
 .account {
     flex: 1;
     background-color: rgb(196, 196, 196);
+    text-align: center;
 }
 
 .icon {
