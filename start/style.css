@@ -8,7 +8,10 @@ main {
     display:flex;
     justify-content: center;
     height: 100vh;
-    
+}
+
+button {
+    font-size: 30px;
 }
 
 .symb-container {
@@ -29,8 +32,8 @@ main {
     "num-container num-container num-container equal";
     gap: 1px;
     align-content: center;
+    grid-template-rows: 40px 40px 160px;
 }
-
 
 #display {
     grid-area: display;
@@ -55,9 +58,8 @@ main {
 
 .equal {
     background-color: rgb(231, 88, 88);
+    border-bottom-right-radius: 10px;
 }
-
-/*Non riesco centrere l'uguale al centro della traccia*/
 
 .symbol {
     background-color: grey;
@@ -67,10 +69,10 @@ main {
     background-color: rgb(46, 47, 58);
     color: white;
     text-align: end;
-}
-
-div {
-    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-right: 5px;
+    font-size: 35px;
 }
 
 .num-container {
@@ -79,5 +81,7 @@ div {
     gap: 1px;
 }
 
-/*Ho modificato il valore richiesto dall'esercizio, con repeat (4, 1fr)
-il risultato della .png non corrispondeva*/
+#zero {
+    border-bottom-left-radius: 10px;
+}
+
